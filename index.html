@@ -13,6 +13,18 @@
 
     <link rel="shortcut icon" href="images/forest-icon-png-29.png" type="image/x-icon">
 
+    <!--JS SCRIPT LINKS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+        });
+    </script>
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="styles/slicknav.css">
     <link rel="stylesheet" href="styles/main.css">
 
     <title>FORESTGEAR</title>
@@ -22,7 +34,13 @@
     <main>
         <section class="hero">
             <header>
-                <a href="index.html"><img class="logoimage" src="images/logo.png" alt="Forest Gear Homepage" title="Forest Gear Homepage"></a>
+                <a href="index.html">
+                    <img class="logoimage" src="images/logo.png" alt="Forest Gear Homepage"
+                        title="Forest Gear Homepage">
+                </a>
+
+                <!--MOBILE MENU NAV TAGS-->
+                <nav id="mobilemenu"></nav>
                 <nav id="nav_menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
